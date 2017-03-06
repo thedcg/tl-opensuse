@@ -1,0 +1,6 @@
+################################
+# Dockerfile: thedcg/tl-opensuse:tumbleweed
+
+# ベース
+FROM opensuse:tumbleweed
+

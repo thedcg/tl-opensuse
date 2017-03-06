@@ -1,0 +1,6 @@
+################################
+# Dockerfile: thedcg/tl-opensuse:latest
+
+# ベース
+FROM opensuse:latest
+
