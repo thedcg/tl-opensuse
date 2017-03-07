@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-opensuse:13.2
+# Dockerfile: thedcg/pandoc-opensuse:13.2
 
 # ベース
 FROM opensuse:13.2
@@ -57,6 +57,8 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
+	pandoc\
+#	ghc-pandoc-citeproc\
  && date --iso-8601=ns
 
 # 終了

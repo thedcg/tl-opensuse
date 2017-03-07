@@ -43,3 +43,5 @@
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
+	pandoc\
+#	ghc-pandoc-citeproc\

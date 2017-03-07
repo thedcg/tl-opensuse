@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-opensuse:latest
+# Dockerfile: thedcg/pandoc-opensuse:latest
 
 # ベース
 FROM opensuse:latest

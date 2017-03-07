@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-opensuse:tumbleweed
+# Dockerfile: thedcg/pandoc-opensuse:tumbleweed
 
 # ベース
 FROM opensuse:tumbleweed

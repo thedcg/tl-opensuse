@@ -1,5 +1,5 @@
 ################################
-# Dockerfile: thedcg/tl-opensuse:tumbleweed
+# Dockerfile: thedcg/pandoc-opensuse:tumbleweed
 
 # ベース
 FROM opensuse:tumbleweed
@@ -57,6 +57,8 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
+	pandoc\
+#	ghc-pandoc-citeproc\
 	texlive-platex\
 	texlive-uplatex\
  && date --iso-8601=ns

@@ -1,6 +1,6 @@
-# thedcg/tl-opensuse
+# thedcg/pandoc-opensuse
 
-## thedcg/tl-opensuse
+## thedcg/pandoc-opensuse
 ### tumbleweed
 ### latest
 ### 42.1
