@@ -16,6 +16,12 @@ dockerfiles:
 	  cat "Dockerfile.base.$${TAG}" \
 	      "Dockerfile.common" \
 	      > $${TAG}/Dockerfile; \
+	  if [ -f "Dockerfile.repo.$${TAG}" ]; then \
+	    cat "Dockerfile.repo.$${TAG}" \
+	        >> $${TAG}/Dockerfile; \
+	  fi; \
+	  cat "Dockerfile.package.common" \
+	      >> $${TAG}/Dockerfile; \
 	  if [ -f "Dockerfile.package.$${TAG}" ]; then \
 	    cat "Dockerfile.package.$${TAG}" \
 	        >> $${TAG}/Dockerfile; \
