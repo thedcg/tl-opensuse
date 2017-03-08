@@ -12,8 +12,9 @@ MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 
 # アップデート
 RUN date --iso-8601=ns\
- && zypper --non-interactive update\
- && zypper --non-interactive install\
+ && zypper --non-interactive repos\
+ && zypper --non-interactive --gpg-auto-import-keys update\
+ && zypper --non-interactive --gpg-auto-import-keys install\
 	make\
 	which\
 	git\
@@ -58,7 +59,7 @@ RUN date --iso-8601=ns\
 	ghostscript-cjk\
 	perl-biber\
 	pandoc\
-#	ghc-pandoc-citeproc\
+	ghc-pandoc-citeproc\
  && date --iso-8601=ns
 
 # 終了

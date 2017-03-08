@@ -1,0 +1,2 @@
+ && zypper --non-interactive --gpg-auto-import-keys addrepo http://download.opensuse.org/repositories/devel:languages:haskell/openSUSE_Tumbleweed/devel:languages:haskell.repo\
+ && zypper --non-interactive --gpg-auto-import-keys refresh\

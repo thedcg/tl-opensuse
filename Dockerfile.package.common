@@ -1,5 +1,5 @@
- && zypper --non-interactive update\
- && zypper --non-interactive install\
+ && zypper --non-interactive --gpg-auto-import-keys update\
+ && zypper --non-interactive --gpg-auto-import-keys install\
 	make\
 	which\
 	git\
@@ -44,4 +44,4 @@
 	ghostscript-cjk\
 	perl-biber\
 	pandoc\
-#	ghc-pandoc-citeproc\
+	ghc-pandoc-citeproc\

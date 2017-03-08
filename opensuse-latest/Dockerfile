@@ -12,8 +12,11 @@ MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 
 # アップデート
 RUN date --iso-8601=ns\
- && zypper --non-interactive update\
- && zypper --non-interactive install\
+ && zypper --non-interactive repos\
+ && zypper --non-interactive --gpg-auto-import-keys addrepo http://download.opensuse.org/repositories/devel:languages:haskell/openSUSE_Leap_42.2/devel:languages:haskell.repo\
+ && zypper --non-interactive --gpg-auto-import-keys refresh\
+ && zypper --non-interactive --gpg-auto-import-keys update\
+ && zypper --non-interactive --gpg-auto-import-keys install\
 	make\
 	which\
 	git\
@@ -58,7 +61,7 @@ RUN date --iso-8601=ns\
 	ghostscript-cjk\
 	perl-biber\
 	pandoc\
-#	ghc-pandoc-citeproc\
+	ghc-pandoc-citeproc\
  && date --iso-8601=ns
 
 # 終了
