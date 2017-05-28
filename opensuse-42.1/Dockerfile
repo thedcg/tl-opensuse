@@ -13,7 +13,7 @@ MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 # アップデート
 RUN date --iso-8601=ns\
  && zypper --non-interactive update\
- && zypper --non-interactive install\
+ && zypper --non-interactive install --oldpackage -f\
 	make\
 	which\
 	git\
@@ -34,6 +34,7 @@ RUN date --iso-8601=ns\
 	texlive-collection-fontsrecommended\
 	texlive-collection-genericextra\
 	texlive-collection-genericrecommended\
+	texlive-collection-langjapanese\
 	texlive-collection-latexextra\
 	texlive-collection-latexrecommended\
 	texlive-collection-mathextra\
