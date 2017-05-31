@@ -1,5 +1,5 @@
  && zypper --non-interactive update\
- && zypper --non-interactive install --oldpackage -f\
+ && zypper --non-interactive install --oldpackage\
 	make\
 	which\
 	git\
@@ -20,7 +20,6 @@
 	texlive-collection-fontsrecommended\
 	texlive-collection-genericextra\
 	texlive-collection-genericrecommended\
-	texlive-collection-langjapanese\
 	texlive-collection-latexextra\
 	texlive-collection-latexrecommended\
 	texlive-collection-mathextra\

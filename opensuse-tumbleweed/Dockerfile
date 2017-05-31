@@ -13,7 +13,7 @@ MAINTAINER Lemures Lemniscati <lemures.lemniscati@gmail.com>
 # アップデート
 RUN date --iso-8601=ns\
  && zypper --non-interactive update\
- && zypper --non-interactive install --oldpackage -f\
+ && zypper --non-interactive install --oldpackage\
 	make\
 	which\
 	git\
@@ -34,7 +34,6 @@ RUN date --iso-8601=ns\
 	texlive-collection-fontsrecommended\
 	texlive-collection-genericextra\
 	texlive-collection-genericrecommended\
-	texlive-collection-langjapanese\
 	texlive-collection-latexextra\
 	texlive-collection-latexrecommended\
 	texlive-collection-mathextra\
@@ -58,9 +57,9 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
-	texlive-platex\
-	texlive-uplatex\
 	libopenssl1_0_0-1.0.2k-1.2.x86_64\
+ && zypper --non-interactive install --oldpackage --force-resolution\
+	texlive-collection-langjapanese\
  && date --iso-8601=ns
 
 # 終了
