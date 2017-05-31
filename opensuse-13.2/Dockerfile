@@ -49,7 +49,6 @@ RUN date --iso-8601=ns\
 	texlive-listings\
 	texlive-pdfjam\
 	texlive-ptex\
-	texlive-ptex2pdf\
 	texlive-pxcjkcat\
 	texlive-pxjahyper\
 	texlive-pxrubrica\
@@ -57,6 +56,7 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
+	texlive-ptex2pdf
  && date --iso-8601=ns
 
 # 終了
