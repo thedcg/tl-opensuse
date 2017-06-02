@@ -56,7 +56,6 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
-	libopenssl1_0_0-1.0.2k-1.2.x86_64\
  && zypper --non-interactive install --oldpackage --force-resolution\
 	texlive-collection-langjapanese\
  && date --iso-8601=ns
