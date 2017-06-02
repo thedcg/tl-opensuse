@@ -56,7 +56,7 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
-	texlive-ptex2pdf
+	texlive-ptex2pdf\
  && date --iso-8601=ns
 
 # 終了
