@@ -56,7 +56,6 @@ RUN date --iso-8601=ns\
 	texlive-uptex\
 	ghostscript-cjk\
 	perl-biber\
- && zypper --non-interactive install --oldpackage --force-resolution\
 	texlive-collection-langjapanese\
  && date --iso-8601=ns
 

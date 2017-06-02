@@ -1,2 +1,1 @@
- && zypper --non-interactive install --oldpackage --force-resolution\
 	texlive-collection-langjapanese\
